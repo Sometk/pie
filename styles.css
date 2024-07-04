@@ -8,7 +8,7 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     background-image: url('images/1.png');
-    background-size: 100% 100%; /* Cover entire screen */
+    background-size: 200% 200%; /* Cover entire screen */
     background-repeat: no-repeat;
     background-position: center;
 }
