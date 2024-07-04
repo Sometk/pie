@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+  /*  font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,8 +7,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-    background-image: url('images/1.png');
-    background-size: 200% 200%; /* Cover entire screen */
+    background-image: url('images/1.png');*/
+    background-size: 100%; /* Cover entire screen */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -18,7 +18,12 @@ body {
 }
 
 .image-container {
-    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
 }
 
 #myImage {
