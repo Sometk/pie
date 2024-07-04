@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Function to set the initial background image
 function setInitialBackground() {
-  document.body.style.backgroundImage = "url('images/sky.png')";
+  document.body.style.backgroundImage = "url('images/1.png')";
   document.body.style.backgroundSize = "100% 100%";  // Cover entire screen
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundPosition = "center";
