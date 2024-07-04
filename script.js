@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Other initializations or event listeners can be added here
 });
 
-
 // Function to handle dropdown menu
 function myFunction() {
   console.log("Dropdown button clicked");
@@ -36,10 +35,10 @@ function changeOption(option) {
 
   if (imagePath[option]) {
     console.log(`Setting background image to: ${imagePath[option]}`);
-    document.body.style.backgroundImage = `url('${imagePath[option]}')`;
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundPosition = "center";
+    document.querySelector('.background-container').style.backgroundImage = `url('${imagePath[option]}')`;
+    document.querySelector('.background-container').style.backgroundSize = "cover";
+    document.querySelector('.background-container').style.backgroundRepeat = "no-repeat";
+    document.querySelector('.background-container').style.backgroundPosition = "center";
   }
 
   document.getElementById("myDropdown").classList.remove("show");
