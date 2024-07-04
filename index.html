@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>World</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R6EQLRKR1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R6EQLRKR1B');
+</script>
+
+  
+  <body>
+
+    <audio id="backgroundMusic" controls autoplay loop>
+  <source src="https://github.com/shaylchetty/world/releases/download/v1.0.0/song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    
+    <div class="container">
+      <div class="image-container">
+        <img src="images/1.png" id="myImage" alt="Selected Image" />
+      </div>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" id="dropdownButton">
+          <span class="selected-option"> 144p ⌄</span>
+          <!-- Span to display the selected option -->
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" onclick="changeOption('144p')">144p</a>
+          <a href="#" onclick="changeOption('240p')">240p</a>
+          <a href="#" onclick="changeOption('480p')">480p</a>
+          <a href="#" onclick="changeOption('720p')">720p</a>
+          <a href="#" onclick="changeOption('1080p')">1080p</a>
+          <a href="#" onclick="changeOption('1440p')">1440p</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
