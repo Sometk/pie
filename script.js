@@ -35,11 +35,9 @@ function changeOption(option) {
   };
 
   if (imagePath[option]) {
-    console.log(`Setting background image to: ${imagePath[option]}`);
-    document.body.style.backgroundImage = `url('${imagePath[option]}')`;
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundPosition = "center";
+    console.log(`Setting image source to: ${imagePath[option]}`);
+    const selectedImage = document.getElementById("selectedImage");
+    selectedImage.src = imagePath[option];
   }
 
   document.getElementById("myDropdown").classList.remove("show");
