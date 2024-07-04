@@ -9,11 +9,22 @@ gtag('config', 'G-R6EQLRKR1B');
 // Function to set the initial background image
 document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM fully loaded and parsed");
+  setInitialBackground();
+
+  // Other initializations or event listeners can be added here
+});
+
+// Function to set the initial background image
+function setInitialBackground() {
   document.body.style.backgroundImage = "url('images/sky.png')";
   document.body.style.backgroundSize = "cover";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundPosition = "center";
-});
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
+  document.body.style.height = "100%";
+  document.body.style.zIndex = "-1";
+}
 
 // Function to handle dropdown menu
 function myFunction() {
@@ -29,9 +40,9 @@ function changeOption(option) {
   dropdownButton.innerHTML = selectedOption;
 
   const imagePath = {
-    'applepie': 'images/applepie.png',   // Path to your applepie image
-    'pumpkinpie': 'images/pumpkinpie.png', // Path to your pumpkinpie image
-    'cutiepie': 'images/cutiepie.png'     // Path to your cutiepie image
+    'applepie': 'images/applepie.png',
+    'pumpkinpie': 'images/pumpkinpie.png',
+    'cutiepie': 'images/cutiepie.png'
   };
 
   if (imagePath[option]) {
@@ -56,4 +67,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
