@@ -17,12 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
 // Function to set the initial background image
 function setInitialBackground() {
   document.body.style.backgroundImage = "url('images/sky.png')";
-  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundSize = "100% 100%";  // Cover entire screen
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundPosition = "center";
   document.body.style.position = "fixed";
-  document.body.style.width = "100%";
-  document.body.style.height = "100%";
+  document.body.style.top = "0";
+  document.body.style.left = "0";
+  document.body.style.width = "100vw";  // Viewport width
+  document.body.style.height = "100vh"; // Viewport height
+  document.body.style.margin = "0";     // Remove any default margin
   document.body.style.zIndex = "-1";
 }
 
