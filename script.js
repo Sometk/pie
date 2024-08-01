@@ -43,8 +43,8 @@ function changeOption(option) {
     
     // Position the background image absolutely
     bgContainer.style.position = "absolute";
-    bgContainer.style.width = "20px";
-    bgContainer.style.height = "20px";
+    bgContainer.style.width = "100px";
+    bgContainer.style.height = "100px";
     bgContainer.style.top = "50%";
     bgContainer.style.left = "50%";
     bgContainer.style.transform = "translate(-50%, -50%)";
