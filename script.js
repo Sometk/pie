@@ -35,10 +35,19 @@ function changeOption(option) {
 
   if (imagePath[option]) {
     console.log(`Setting background image to: ${imagePath[option]}`);
-    document.querySelector('.background-container').style.backgroundImage = `url('${imagePath[option]}')`;
-    document.querySelector('.background-container').style.backgroundSize = "cover";
-    document.querySelector('.background-container').style.backgroundRepeat = "no-repeat";
-    document.querySelector('.background-container').style.backgroundPosition = "center";
+    const bgContainer = document.querySelector('.background-container');
+    bgContainer.style.backgroundImage = `url('${imagePath[option]}')`;
+    bgContainer.style.backgroundSize = "20px 20px"; // Small, fixed size
+    bgContainer.style.backgroundRepeat = "no-repeat";
+    bgContainer.style.backgroundPosition = "center";
+    
+    // Position the background image absolutely
+    bgContainer.style.position = "absolute";
+    bgContainer.style.width = "20px";
+    bgContainer.style.height = "20px";
+    bgContainer.style.top = "50%";
+    bgContainer.style.left = "50%";
+    bgContainer.style.transform = "translate(-50%, -50%)";
   }
 
   document.getElementById("myDropdown").classList.remove("show");
