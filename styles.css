@@ -4,6 +4,19 @@ body, html {
     overflow: hidden;
 }
 
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url('images/applepie.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .image-container {
     position: absolute;
     width: 20px;  /* Adjust this value to your desired width */
@@ -14,15 +27,6 @@ body, html {
     z-index: 1; /* Ensures the container is above the background */
 }
 
-.background-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0; /* Keeps the background behind other elements */
-}
 
 #myImage {
     width: 30px;
