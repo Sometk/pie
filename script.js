@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
   // Other initializations or event listeners can be added here
 });
 
+// Function to set initial background image
+function setInitialBackground() {
+    const initialBackground = 'images/applepie.png';
+    document.querySelector('.background-container').style.backgroundImage = `url('${initialBackground}')`;
+}
+
 // Function to handle dropdown menu
 function myFunction() {
   console.log("Dropdown button clicked");
@@ -35,6 +41,7 @@ function changeOption(option) {
 
   if (imagePath[option]) {
     console.log(`Setting background image to: ${imagePath[option]}`);
+    document.querySelector('.background-container').style.backgroundImage = `url('${imagePath[option]}')`;
   }
 
   document.getElementById("myDropdown").classList.remove("show");
