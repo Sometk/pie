@@ -40,8 +40,8 @@ function changeOption(option) {
   };
 
   if (imagePath[option]) {
-    console.log(`Setting background image to: ${imagePath[option]}`);
-    document.querySelector('.background-container').style.backgroundImage = `url('${imagePath[option]}')`;
+    console.log(`Setting image to: ${imagePath[option]}`);
+    document.querySelector('.image-container').style.backgroundImage = `url('${imagePath[option]}')`;
   }
 
   document.getElementById("myDropdown").classList.remove("show");
