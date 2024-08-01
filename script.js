@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Function to set initial background image
 function setInitialBackground() {
-    const initialBackground = 'images/applepie.png';
-    document.querySelector('.background-container').style.backgroundImage = `url('${initialBackground}')`;
+    const initialBackground = 'images/1.png';
+    document.querySelector('.image-container').style.backgroundImage = `url('${initialBackground}')`;
 }
 
 // Function to handle dropdown menu
