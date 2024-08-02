@@ -11,7 +11,7 @@ body, html {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-image: url('images/sky.png'); /* Default background image */
+    background-image: url('images/1.png'); /* Example background image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,8 +20,8 @@ body, html {
 
 .image-container {
     position: absolute;
-    width: 300px;  /* Adjust this value to your desired width */
-    height: 300px; /* Adjust this value to your desired height */
+    width: 450px;  /* Adjust this value to your desired width */
+    height: 450px; /* Adjust this value to your desired height */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the container */
@@ -34,6 +34,18 @@ body, html {
     height: 100%; /* Fit image height to container */
     object-fit: contain; /* Ensure image scales properly without distortion */
     display: block; /* Remove any default margin/padding */
+}
+
+.content-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Take full height of content-container */
 }
 
 .dropdown {
