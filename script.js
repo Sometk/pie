@@ -10,14 +10,12 @@ gtag('config', 'G-R6EQLRKR1B');
 document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM fully loaded and parsed");
   setInitialBackground();
-
-  // Other initializations or event listeners can be added here
 });
 
 // Function to set initial background image
 function setInitialBackground() {
     const initialBackground = 'images/1.png';
-    document.querySelector('.image-container').style.backgroundImage = `url('${initialBackground}')`;
+    document.querySelector('.background-container').style.backgroundImage = `url('${initialBackground}')`;
 }
 
 // Function to handle dropdown menu
@@ -26,7 +24,7 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Function to change the selected option in the dropdown and set background image
+// Function to change the selected option in the dropdown and set overlay image
 function changeOption(option) {
   const imagePath = {
       'applepie': 'images/applepie.png',
@@ -46,7 +44,7 @@ function changeOption(option) {
   dropdownButton.innerHTML = `${option} ⌄`;
 
   // Hide the dropdown after selection
-  document.getElementById("dropdownContent").classList.remove("show");
+  document.getElementById("myDropdown").classList.remove("show");
 }
 
 // Close the dropdown if the user clicks outside of it
