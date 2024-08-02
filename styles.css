@@ -20,8 +20,8 @@ body, html {
 
 .image-container {
     position: absolute;
-    width: 1000px;  /* Adjust this value to your desired width */
-    height: 1000px; /* Adjust this value to your desired height */
+    width: 500px;  /* Adjust this value to your desired width */
+    height: 500px; /* Adjust this value to your desired height */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the container */
