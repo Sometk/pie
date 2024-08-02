@@ -1,15 +1,9 @@
-// Function to handle Google Analytics
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-R6EQLRKR1B');
-
 // Function to set the initial background image
 document.addEventListener("DOMContentLoaded", function() {
   console.log("DOM fully loaded and parsed");
   setInitialBackground();
+
+  // Other initializations or event listeners can be added here
 });
 
 // Function to set initial background image
@@ -24,7 +18,7 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Function to change the selected option in the dropdown and set overlay image
+// Function to change the selected option in the dropdown and set image overlay
 function changeOption(option) {
   const imagePath = {
       'applepie': 'images/applepie.png',
@@ -32,11 +26,17 @@ function changeOption(option) {
       'cutiepie': 'images/cutiepie.png'
   };
 
-  const overlayImage = document.getElementById("overlayImage");
+  const imageContainer = document.querySelector('.image-container');
+  
+  // Remove existing image
+  imageContainer.innerHTML = '';
 
   if (imagePath[option]) {
       console.log(`Setting overlay image to: ${imagePath[option]}`);
-      overlayImage.src = imagePath[option]; // Update the image source
+      const img = document.createElement('img');
+      img.src = imagePath[option];
+      img.alt = option;
+      imageContainer.appendChild(img);
   }
 
   // Update the button text to show the selected option
