@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Function to set initial background image
 function setInitialBackground() {
-    const initialBackground = 'images/1.png';
+    const initialBackground = 'images/sky.png';
     document.querySelector('.background-container').style.backgroundImage = `url('${initialBackground}')`;
 }
 
