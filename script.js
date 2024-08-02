@@ -28,23 +28,25 @@ function myFunction() {
 
 // Function to change the selected option in the dropdown and set background image
 function changeOption(option) {
-  console.log(`Option selected: ${option}`);
-  const dropdownButton = document.getElementById("dropdownButton");
-  const selectedOption = `<span class="selected-option">${option} ⌄</span>`;
-  dropdownButton.innerHTML = selectedOption;
-
   const imagePath = {
-    'applepie': 'images/applepie.png',
-    'pumpkinpie': 'images/pumpkinpie.png',
-    'cutiepie': 'images/cutiepie.png'
+      'applepie': 'images/applepie.png',
+      'pumpkinpie': 'images/pumpkinpie.png',
+      'cutiepie': 'images/cutiepie.png'
   };
 
+  const overlayImage = document.getElementById("overlayImage");
+
   if (imagePath[option]) {
-    console.log(`Setting image to: ${imagePath[option]}`);
-    document.querySelector('.image-container').style.backgroundImage = `url('${imagePath[option]}')`;
+      console.log(`Setting overlay image to: ${imagePath[option]}`);
+      overlayImage.src = imagePath[option]; // Update the image source
   }
 
-  document.getElementById("myDropdown").classList.remove("show");
+  // Update the button text to show the selected option
+  const dropdownButton = document.querySelector('.dropbtn');
+  dropdownButton.innerHTML = `${option} ⌄`;
+
+  // Hide the dropdown after selection
+  document.getElementById("dropdownContent").classList.remove("show");
 }
 
 // Close the dropdown if the user clicks outside of it
