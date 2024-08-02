@@ -11,7 +11,7 @@ body, html {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-image: url('images/1.png'); /* Example background image */
+    background-image: url('images/sky.png'); /* Example background image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,8 +20,8 @@ body, html {
 
 .image-container {
     position: absolute;
-    width: 500px;  /* Adjust this value to your desired width */
-    height: 500px; /* Adjust this value to your desired height */
+    width: 1000px;  /* Adjust this value to your desired width */
+    height: 1000px; /* Adjust this value to your desired height */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the container */
@@ -38,20 +38,17 @@ body, html {
 
 .content-container {
     position: relative;
-    height: 100vh; /* Full viewport height */
-}
-
-.button-wrapper {
+    width: 100%;
     display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Take full height of content-container */
+    align-items: flex-start; /* Align at the top */
+    padding-top: 20px; /* Space from the top of the page */
+    z-index: 2; /* Ensure content is above the background */
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-    z-index: 2; /* Ensure dropdown is above the background */
 }
 
 .dropbtn {
